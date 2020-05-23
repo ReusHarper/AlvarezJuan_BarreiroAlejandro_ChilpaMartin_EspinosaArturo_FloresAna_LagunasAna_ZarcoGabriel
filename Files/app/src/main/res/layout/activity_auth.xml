@@ -16,7 +16,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icono_app" />
+        app:srcCompat="@drawable/icono_app"
+        android:contentDescription="@string/d_logoApp" />
 
     <EditText
         android:id="@+id/emailEditText"
@@ -26,11 +27,12 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
-        android:hint="@string/h_email"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_app" />
+        app:layout_constraintTop_toBottomOf="@+id/logo_app"
+        android:hint="@string/h_email"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/passwordEditText"
@@ -44,17 +46,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailEditText"
-        android:hint="@string/h_password" />
+        android:hint="@string/h_password"
+        android:importantForAutofill="no" />
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/logInButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounded"
-        android:text="@string/b_login"
+        android:text="@string/b_logIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,22 +73,8 @@
         android:text="@string/b_signIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintTop_toBottomOf="@+id/logInButton"
         android:background="@drawable/button_rounded_border" />
-
-    <ImageButton
-        android:id="@+id/twitterImageButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/background_social"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.132"
-        app:layout_constraintStart_toEndOf="@+id/gmailImageButton"
-        app:layout_constraintTop_toBottomOf="@+id/signInButton"
-        app:srcCompat="@drawable/icono_twitter" />
 
     <ImageButton
         android:id="@+id/facebookImageButton"
@@ -99,7 +88,8 @@
         app:layout_constraintHorizontal_bias="0.875"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signInButton"
-        app:srcCompat="@drawable/icono_facebook" />
+        app:srcCompat="@drawable/icono_facebook"
+        android:contentDescription="@string/d_logoFacebook"/>
 
     <ImageButton
         android:id="@+id/gmailImageButton"
@@ -111,6 +101,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signInButton"
-        app:srcCompat="@drawable/icono_google" />
+        app:srcCompat="@drawable/icono_google"
+        android:contentDescription="@string/d_logoGoogle"/>
+
+    <ImageButton
+        android:id="@+id/twitterImageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_social"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toEndOf="@+id/gmailImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/signInButton"
+        app:srcCompat="@drawable/icono_twitter"
+        android:contentDescription="@string/d_logoTwitter" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
