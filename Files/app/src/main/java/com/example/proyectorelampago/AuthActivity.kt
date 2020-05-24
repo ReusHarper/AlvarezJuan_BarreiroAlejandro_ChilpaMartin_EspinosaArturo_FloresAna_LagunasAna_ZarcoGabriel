@@ -14,6 +14,11 @@ import kotlinx.android.synthetic.main.activity_auth.*
 class AuthActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        // SplashScreen
+        setTheme(R.style.AppTheme)
+
+        // Instanciacion
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)
 
@@ -34,10 +39,10 @@ class AuthActivity : AppCompatActivity() {
             if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()){
 
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(
-                    "artoby99","246810").addOnCompleteListener {
+                    emailEditText.text.toString(), passwordEditText.text.toString()).addOnCompleteListener {
                         if(it.isSuccessful){
-                            showHome(it.result?.user?.email ?:"--", ProviderType.BASIC)
-                            //showAlertRegister()
+                            showAlertRegister()
+                            //showHome(it.result?.user?.email ?:"--", ProviderType.BASIC)
                         } else {
                             showAlert()
                         }
@@ -54,7 +59,8 @@ class AuthActivity : AppCompatActivity() {
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(
                     emailEditText.text.toString(), passwordEditText.text.toString()).addOnCompleteListener {
                         if(it.isSuccessful){
-                            showHome(it.result?.user?.email ?:"--", ProviderType.BASIC)
+                            showAlertRegister()
+                            //showHome(it.result?.user?.email ?:"--", ProviderType.BASIC)
                         } else {
                             showAlert()
                         }
