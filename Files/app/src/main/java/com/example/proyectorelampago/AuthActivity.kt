@@ -1,19 +1,21 @@
 package com.example.proyectorelampago
 
-import android.R.layout
 import android.content.Intent
 import android.os.Bundle
-import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_auth.*
 
-
 class AuthActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        // SplashScreen
+        setTheme(R.style.AppTheme)
+
+        // Instanciacion
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)
 
@@ -34,10 +36,10 @@ class AuthActivity : AppCompatActivity() {
             if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()){
 
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(
-                    "artoby99","246810").addOnCompleteListener {
+                    emailEditText.text.toString(),
+                    passwordEditText.text.toString()).addOnCompleteListener {
                         if(it.isSuccessful){
-                            showHome(it.result?.user?.email ?:"--", ProviderType.BASIC)
-                            //showAlertRegister()
+                            showHome(it.result?.user?.email ?:"", ProviderType.BASIC)
                         } else {
                             showAlert()
                         }
@@ -52,7 +54,8 @@ class AuthActivity : AppCompatActivity() {
             if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()){
 
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(
-                    emailEditText.text.toString(), passwordEditText.text.toString()).addOnCompleteListener {
+                    emailEditText.text.toString(),
+                    passwordEditText.text.toString()).addOnCompleteListener {
                         if(it.isSuccessful){
                             showHome(it.result?.user?.email ?:"--", ProviderType.BASIC)
                         } else {
