@@ -39,10 +39,10 @@ class AuthActivity : AppCompatActivity() {
             if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()){
 
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(
-                    emailEditText.text.toString(), passwordEditText.text.toString()).addOnCompleteListener {
+                    emailEditText.text.toString(),
+                    passwordEditText.text.toString()).addOnCompleteListener {
                         if(it.isSuccessful){
-                            showAlertRegister()
-                            //showHome(it.result?.user?.email ?:"--", ProviderType.BASIC)
+                            showHome(it.result?.user?.email ?:"", ProviderType.BASIC)
                         } else {
                             showAlert()
                         }
@@ -57,10 +57,10 @@ class AuthActivity : AppCompatActivity() {
             if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()){
 
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(
-                    emailEditText.text.toString(), passwordEditText.text.toString()).addOnCompleteListener {
+                    emailEditText.text.toString(),
+                    passwordEditText.text.toString()).addOnCompleteListener {
                         if(it.isSuccessful){
-                            showAlertRegister()
-                            //showHome(it.result?.user?.email ?:"--", ProviderType.BASIC)
+                            showHome(it.result?.user?.email ?:"--", ProviderType.BASIC)
                         } else {
                             showAlert()
                         }
