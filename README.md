@@ -46,7 +46,7 @@ ___
   indica que la app se encuentra lista para ser ejecutada.
 </p>
 
-![Imagen de app instalada](Imagenes/imagen-appInstalada.jpg?raw=true "App instalada en el dispositivo móvil")
+<img src="Imagenes/imagen-appInstalada.jpg" alt="App instalada en el dispositivo móvil" width="300"/>
 
 ## Splash Screen
 
@@ -55,7 +55,7 @@ ___
   conocida como 'Splash Screen', la cual solo se mostrará un par de segundos cuando la app apenas sea abierta.
 </p>
 
-![Imagen de splash screen](Imagenes/splahsScreen.jpg?raw=true "Ventana Splash Screen")
+<img src="Imagenes/splashScreen.jpg" alt="Ventana Splash Screen" width="300"/>
 
 ## Ventana de login
 
@@ -72,7 +72,7 @@ ___
   información del usuario con la ayuda de Firebase.
 </p>
 
-![Imagen de ventana de inicio](Imagenes/ventana-inicio.jpg?raw=true "Ventana de inicio de sesión")
+<img src="Imagenes/ventana-inicio.jpg" alt="Ventana de inicio de sesión" width="300"/>
 
 ## Ventana emergente 1: Error de autenticación
 
@@ -82,7 +82,8 @@ ___
   no podrá acceder a las funcionalidades de la app.
 </p>
 
-![Imagen emergente 1](Imagenes/ventana-inicio.jpg?raw=true "Ventana emergente 1 - Error de autenticación")
+<img src="Imagenes/ventana-emergente1.jpg" alt="Ventana emergente 1 - Error de autenticación" width="300"/>
+
 
 ## Ventana de acceso
 
@@ -98,5 +99,6 @@ ___
   Además de ello, se cuenta con un botón logout el cual permite al usuario cerrar la sesión con la que ingreso a la app.
 </p>
 
-![Imagen de ventana de acceso](Imagenes/ventana-acceso.jpg?raw=true "Ventana de acceso a la app")
+<img src="Imagenes/ventana-acceso.jpg" alt="Ventana de acceso a la app" width="300"/>
+
   
