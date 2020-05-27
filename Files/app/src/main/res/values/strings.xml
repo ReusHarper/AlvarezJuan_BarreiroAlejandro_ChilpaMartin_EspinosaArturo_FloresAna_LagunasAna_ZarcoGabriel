@@ -13,4 +13,9 @@
     <string name="d_logoFacebook">Logo de Facebook</string>
     <string name="d_logoGoogle">Logo de Google</string>
     <string name="d_logoTwitter">Logo de Twitter</string>
+    
+    <string name="next_player">Turno: %1$s</string>
+    <string name="winner">Ganador: %1$s</string>
+
+
 </resources>
