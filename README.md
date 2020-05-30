@@ -46,7 +46,9 @@ ___
   indica que la app se encuentra lista para ser ejecutada.
 </p>
 
-<img src="Imagenes/imagen-appInstalada.jpg" alt="App instalada en el dispositivo móvil" width="300"/>
+<div align="center">
+	<img src="Imagenes/imagen-appInstalada.jpg" alt="App instalada en el dispositivo móvil" width="300"/>
+</div>
 
 ## Splash Screen
 
@@ -55,7 +57,9 @@ ___
   conocida como 'Splash Screen', la cual solo se mostrará un par de segundos cuando la app apenas sea abierta.
 </p>
 
-<img src="Imagenes/splashScreen.jpg" alt="Ventana Splash Screen" width="300"/>
+<div align="center">
+	<img src="Imagenes/splashScreen.jpg" alt="Ventana Splash Screen" width="300"/>
+</div>
 
 ## Ventana de login
 
@@ -72,7 +76,9 @@ ___
   información del usuario con la ayuda de Firebase.
 </p>
 
-<img src="Imagenes/ventana-inicio.jpg" alt="Ventana de inicio de sesión" width="300"/>
+<div align="center">
+	<img src="Imagenes/ventana-inicio.jpg" alt="Ventana de inicio de sesión" width="300"/>
+</div>
 
 ## Ventana emergente 1: Error de autenticación
 
@@ -82,8 +88,9 @@ ___
   no podrá acceder a las funcionalidades de la app.
 </p>
 
-<img src="Imagenes/ventana-emergente1.jpg" alt="Ventana emergente 1 - Error de autenticación" width="300"/>
-
+<div align="center">
+	<img src="Imagenes/ventana-emergente1.jpg" alt="Ventana emergente 1 - Error de autenticación" width="300"/>
+</div>
 
 ## Ventana de acceso
 
@@ -99,7 +106,9 @@ ___
   Además de ello, se cuenta con un botón logout el cual permite al usuario cerrar la sesión con la que ingreso a la app.
 </p>
 
-<img src="Imagenes/ventana-acceso.jpg" alt="Ventana de acceso a la app" width="300"/>
+<div align="center">
+	<img src="Imagenes/ventana-acceso.jpg" alt="Ventana de acceso a la app" width="300"/>
+</div>
 
 ## Ventana para redactar un correo  
 
@@ -107,7 +116,9 @@ ___
   Esta ventana le permite al usuario redactar un correo ya que esté autentificado. Contiene dos botones en la parte superior de la pantalla, uno es para volver a la ventana anterior y otro para enviar el correo. También hay tres partes donde el usuario puede ingresar texto. La primera es para escribir el destinatario, la segunda para escribir el asunto del correo y la tercera para escribir el correo. Esta ventana tomó las funcionalidades de la app de Gmail pero es más minimalista.
 </p>
 
-<img src="Imagenes/redactarCorreo.png" alt="Ventana de acceso a la app" width="300"/>
+<div align="center">
+	<img src="Imagenes/redactarCorreo.png" alt="Ventana de acceso a la app" width="300"/>
+</div>
 
 ## Ventana con las bandejas de correo  
 
@@ -115,4 +126,6 @@ ___
   Se puede acceder a las distintas bandejas que ofrece un servicio de mail. En la parte superior tiene un botón para volver a la ventana anterior. En la parte superior de la ventana, en el centro, hay una imagen donde va la foto de perfil del usuario. Debajo de la imagen se listan con botones las bandejas que pueden ser accesadas dentro de la aplicación. Las bandejas son de principal, destacados, enviados, borradores y spam. Se cuentan con las bandejas más esenciales y usadas del correo electrónico.
 </p>
 
-<img src="Imagenes/bandejasCorreo.png" alt="Ventana de acceso a la app" width="300"/>
+<div align="center">
+	<img src="Imagenes/bandejasCorreo.png" alt="Ventana de acceso a la app" width="300"/>
+</div>
