@@ -119,5 +119,13 @@
         app:srcCompat="@drawable/icono_twitter"
         android:contentDescription="@string/d_logoTwitter" />
 
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="493dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
