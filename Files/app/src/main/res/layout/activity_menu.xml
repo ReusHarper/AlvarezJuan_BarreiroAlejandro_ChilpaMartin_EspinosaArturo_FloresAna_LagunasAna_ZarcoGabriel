@@ -7,95 +7,131 @@
     android:layout_height="match_parent"
     android:background="#7572f4">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
-        android:layout_width="409dp"
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="159dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/h_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logOutbutton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="38dp" />
+        android:layout_marginTop="40dp"
+        android:background="@color/backgroundButtonSecundary"
+        android:text="@string/b_logOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buzonButton" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/bienvenida_menuTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Bienvenidos a RelampagoApp"
+        android:text="@string/m_bienvenida"
 
         android:textAppearance="?android:attr/textAppearanceLarge"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/camaraButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.425" />
+        app:layout_constraintVertical_bias="0.335" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="147dp"
+        android:id="@+id/camaraButton"
+        android:layout_width="174dp"
         android:layout_height="45dp"
-        android:layout_marginTop="76dp"
-        android:text="Camara"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="161dp" />
+        android:layout_marginTop="152dp"
+        android:text="@string/b_camara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="153dp"
-        android:layout_height="44dp"
-        android:text="Calendario"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="223dp" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="61dp"
+        android:id="@+id/calendarioButton"
+        android:layout_width="168dp"
         android:layout_height="48dp"
-        app:srcCompat="@drawable/camara_fotografica"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="114dp" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="66dp"
-        android:layout_height="64dp"
-        app:srcCompat="@drawable/calendaro"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="203dp" />
+        android:layout_marginTop="84dp"
+        android:text="@string/b_calendario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/camaraButton" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/buzonButton"
         android:layout_width="165dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="60dp"
-        android:text="Juegos"
-        app:layout_constraintTop_toBottomOf="@+id/button7"
-        tools:layout_editor_absoluteX="161dp" />
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/b_buzon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/juegosButton" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/correoImageView"
+        android:layout_width="64dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toStartOf="@+id/buzonButton"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/juegosImageView"
+        app:srcCompat="@drawable/correo" />
+
+    <Button
+        android:id="@+id/juegosButton"
+        android:layout_width="163dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/b_juegos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarioButton" />
+
+    <ImageView
+        android:id="@+id/juegosImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/juegos_imagen"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="319dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="173dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="60dp"
-        android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/button8"
-        tools:layout_editor_absoluteX="161dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/juegosButton"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarioImageView"
+        app:srcCompat="@drawable/juegos_imagen" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="59dp"
-        android:layout_height="132dp"
-        app:srcCompat="@drawable/correo"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="383dp" />
+        android:id="@+id/calendarioImageView"
+        android:layout_width="66dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/calendarioButton"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camaraImageView"
+        app:srcCompat="@drawable/calendaro" />
+
+    <ImageView
+        android:id="@+id/camaraImageView"
+        android:layout_width="61dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintEnd_toStartOf="@+id/camaraButton"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/camara_fotografica" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
