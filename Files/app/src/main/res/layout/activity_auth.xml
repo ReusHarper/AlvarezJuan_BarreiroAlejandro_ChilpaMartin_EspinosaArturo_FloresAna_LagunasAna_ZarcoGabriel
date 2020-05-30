@@ -118,7 +118,7 @@
         app:layout_constraintTop_toBottomOf="@+id/signInButton"
         app:srcCompat="@drawable/icono_twitter"
         android:contentDescription="@string/d_logoTwitter" />
-    
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
