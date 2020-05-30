@@ -14,6 +14,8 @@
 
         </activity>
         <activity android:name=".register" />
+        <activity android:name=".tray"></activity>
+        <activity android:name=".writeMail" />
         <activity
             android:name=".AuthActivity"
             android:theme="@style/SplashTheme">
