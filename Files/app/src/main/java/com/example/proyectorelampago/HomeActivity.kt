@@ -7,7 +7,8 @@ import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_home.*
 
 enum class ProviderType {
-    BASIC
+    BASIC,
+    FACEBOOK
 }
 
 class HomeActivity : AppCompatActivity() {
