@@ -8,10 +8,16 @@
     <string name="b_logIn">Login</string>
     <string name="b_signIn">Sign In</string>
     <string name="b_logOut">Logout</string>
+    <string name="b_buzon">Buzón</string>
+    <string name="b_camara">Cámara</string>
+    <string name="b_calendario">Calendario</string>
+    <string name="b_juegos">Juegos</string>
+
 
     <string name="d_logoApp">Logo principal de la app</string>
     <string name="d_logoFacebook">Logo de Facebook</string>
     <string name="d_logoGoogle">Logo de Google</string>
     <string name="d_logoTwitter">Logo de Twitter</string>
-    <string name="calendario_relampago_2_0">Calendario Relampago 2.0</string>
+    <string name="calendario_relampago_2_0">Calendario Relampago</string>
+    <string name="m_bienvenida">Bienvenidos a Proyecto Relampago</string>
 </resources>
