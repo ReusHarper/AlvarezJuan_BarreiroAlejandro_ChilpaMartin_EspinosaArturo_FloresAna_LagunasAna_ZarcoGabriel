@@ -54,8 +54,8 @@
         android:layout_width="61dp"
         android:layout_height="48dp"
         app:srcCompat="@drawable/camara_fotografica"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="114dp" />
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="103dp" />
 
     <ImageView
         android:id="@+id/imageView5"
