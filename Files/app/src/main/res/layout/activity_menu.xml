@@ -11,7 +11,8 @@
         android:id="@+id/cardView2"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:layout_editor_absoluteX="31dp"
         tools:layout_editor_absoluteY="38dp" />
 
     <TextView
@@ -19,19 +20,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="BIENVENIDOS A LA APP"
-        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        android:text="Bienvenidos a RelampagoApp"
+
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.425" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="147dp"
         android:layout_height="45dp"
         android:layout_marginTop="76dp"
-        android:text="Button"
+        android:text="Camara"
         app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintTop_toBottomOf="@+id/cardView2"
         app:layout_constraintVertical_bias="0.0"
@@ -41,9 +45,9 @@
         android:id="@+id/button7"
         android:layout_width="153dp"
         android:layout_height="44dp"
-        android:text="Button"
+        android:text="Calendario"
         tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="219dp" />
+        tools:layout_editor_absoluteY="223dp" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -66,7 +70,7 @@
         android:layout_width="165dp"
         android:layout_height="42dp"
         android:layout_marginTop="60dp"
-        android:text="Button"
+        android:text="Juegos"
         app:layout_constraintTop_toBottomOf="@+id/button7"
         tools:layout_editor_absoluteX="161dp" />
 
@@ -77,4 +81,21 @@
         app:srcCompat="@drawable/juegos_imagen"
         tools:layout_editor_absoluteX="66dp"
         tools:layout_editor_absoluteY="319dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="173dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="60dp"
+        android:text="Button"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        tools:layout_editor_absoluteX="161dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="59dp"
+        android:layout_height="132dp"
+        app:srcCompat="@drawable/correo"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="383dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
