@@ -4,11 +4,18 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.facebook.CallbackManager
+import com.facebook.FacebookCallback
+import com.facebook.FacebookException
+import com.facebook.login.LoginManager
+import com.facebook.login.LoginResult
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_auth.*
 
 class AuthActivity : AppCompatActivity() {
+
+    private val callbackManager = CallbackManager.Factory.create()
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -65,6 +72,24 @@ class AuthActivity : AppCompatActivity() {
             } else {
                 showAlertNull()
             }
+        }
+
+        facebookImageButton.setOnClickListener{
+            LoginManager.getInstance().registerCallback(callbackManager,
+                object :FacebookCallback<LoginResult>{
+
+                    override fun onSuccess(result: LoginResult?) {
+                        TODO("Not yet implemented")
+                    }
+
+                    override fun onCancel() {
+
+                    }
+
+                    override fun onError(error: FacebookException?) {
+                        TODO("Not yet implemented")
+                    }
+                })
         }
     }
 
