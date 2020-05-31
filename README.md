@@ -129,3 +129,24 @@ ___
 <div align="center">
 	<img src="Imagenes/bandejasCorreo.png" alt="Ventana de acceso a la app" width="300"/>
 </div>
+
+## Juego de Gato 
+
+<p align=" justify">
+  Se creo una vista tradicional del juego de gato hecha a base de botones ordenados. El turno por defecto es X. Se creó un botón llamado
+  reset el cual permite borrar y volver a jugar en caso de haber un ganador o un empate
+</p>
+
+<div align="center">
+	<img src="Imagenes/principal.png" alt="Ventana de acceso a la app" width="300"/>
+</div>
+
+## Ganador O
+
+<p align=" justify">
+  En caso de que la O este seguido en casillas verticales horizontales o diagonales habrá ganado el jugardor O
+</p>
+
+<div align="center">
+	
+</div>
