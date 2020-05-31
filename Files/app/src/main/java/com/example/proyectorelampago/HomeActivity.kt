@@ -13,7 +13,8 @@ import kotlinx.android.synthetic.main.activity_menu.*
 
 enum class ProviderType {
     BASIC,
-    FACEBOOK
+    FACEBOOK,
+    GOOGLE
 }
 
 class HomeActivity : AppCompatActivity() {
