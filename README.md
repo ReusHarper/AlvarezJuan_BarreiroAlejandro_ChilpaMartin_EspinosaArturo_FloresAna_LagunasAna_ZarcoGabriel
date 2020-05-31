@@ -144,9 +144,32 @@ ___
 ## Ganador O
 
 <p align=" justify">
-  En caso de que la O este seguido en casillas verticales horizontales o diagonales habrá ganado el jugardor O
+  En caso de que la O este seguido en las tres casillas de manera vertical horizontal o diagonal hbrá ganado el jugador O
+</p>
+
+<div align="center">
+	<img src="Imagenes/Ganador0.png" alt="Ventana de acceso a la app" width="300"/>
+	
+</div>
+
+## Ganador X
+<p align=" justify">
+	En caso de que X este seguido en las tres casillas de manera vertical horizontal o diagonal hbrá ganado el jugador X
+</p>
+
+<div align="center">
+	<img src="Imagenes/GanadorX.png" alt="Ventana de acceso a la app" width="300"/>
+</div>
+
+## Empate 
+
+<p align=" justify">
+	En caso de que la X ni la O esten seguidos en las tres casillas verticales horizontales o diagonales habrá un empate
 </p>
 
 <div align="center">
 	
 </div>
+
+
+
