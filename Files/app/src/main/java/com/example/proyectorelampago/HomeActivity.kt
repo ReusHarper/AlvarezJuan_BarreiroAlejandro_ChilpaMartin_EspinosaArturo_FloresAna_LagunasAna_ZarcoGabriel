@@ -27,6 +27,12 @@ class HomeActivity : AppCompatActivity() {
         val bundle = intent.extras
         val email = bundle?.getString("email")
         setup(email ?: "--")
+
+        //Guardar datos
+
+        val prefs = getsharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE.edit)
+        prefs.putString("email", email)
+        prefs
     }
 
     private fun setup(email: String) {
