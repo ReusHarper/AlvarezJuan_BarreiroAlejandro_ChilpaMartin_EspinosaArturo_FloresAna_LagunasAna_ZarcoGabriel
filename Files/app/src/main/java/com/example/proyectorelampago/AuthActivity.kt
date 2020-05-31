@@ -16,6 +16,7 @@ import kotlinx.android.synthetic.main.activity_auth.*
 class AuthActivity : AppCompatActivity() {
 
     private val callbackManager = CallbackManager.Factory.create()
+    private  val GOOGLE_SIGN_IN = 100
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -107,6 +108,20 @@ class AuthActivity : AppCompatActivity() {
                     }
                 })
         }
+
+
+        gmailImageButton.setOnClickLister{
+
+            val googleConf = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                    .requestIdToken(getString(R.string.default_web_client_id))
+                    .requestEmail()
+                    .build()
+
+            val googleClient:GoogleSignInClient! = GoogleSignIn.getClient(this, googleConf)
+            googleClient.signOut()
+
+            startActivityForResult(googleClient.signInIntent, GOOGLE_SIGN_IN )
+        }
     }
 
     private fun showAlert() {
@@ -145,8 +160,39 @@ class AuthActivity : AppCompatActivity() {
     private fun showHome(email: String) {
         val homeIntent = Intent(this, HomeActivity::class.java).apply {
             putExtra("email", email)
+            putExtra("provider", provider.name)
         }
 
+
         startActivity(homeIntent)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if(requestCode == GOOGLE_SIGN_IN){
+            val task:TaskGoogleSignInAccount>! = GoogleSignIn.getSignedInAccountFromIntent(data)
+
+            try {
+                val account:GoogleSignInAccount? = task.getResult(ApiException::class.java)
+
+                if(account!= null) {
+                    val credential = GoofleAuthProvider.getCredential(account.idToken, null)
+
+                    FirebaseAuth.getInstance().signInWithCredential(credential){
+                        if (it.isSuccessful){
+                            showHome(account.email ?: "", ProviderType.GOOGLE)
+                        } else {
+                            showAlert()
+                        }
+                    }
+                }
+            } catch (e: ApiException){
+                showAlert()
+            }
+
+        }
+
+        return super.equals(other)
     }
 }
