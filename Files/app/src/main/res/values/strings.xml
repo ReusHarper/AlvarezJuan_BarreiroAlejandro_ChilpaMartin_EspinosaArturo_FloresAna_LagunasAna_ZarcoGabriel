@@ -18,6 +18,14 @@
     <string name="d_logoFacebook">Logo de Facebook</string>
     <string name="d_logoGoogle">Logo de Google</string>
     <string name="d_logoTwitter">Logo de Twitter</string>
+<<<<<<< HEAD
     <string name="calendario_relampago_2_0">Calendario Relampago</string>
     <string name="m_bienvenida">Bienvenidos a Proyecto Relampago</string>
+=======
+    
+    <string name="next_player">Turno: %1$s</string>
+    <string name="winner">Ganador: %1$s</string>
+
+
+>>>>>>> origin
 </resources>
