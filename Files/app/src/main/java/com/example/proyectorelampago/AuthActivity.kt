@@ -34,6 +34,22 @@ class AuthActivity : AppCompatActivity() {
 
         // Setup
         setup()
+        session()
+    }
+    override fun onStart(){
+        super.onStart()
+
+        authLayout.visibility = View.VISIBLE
+
+    }
+    private fun session(){
+        val prefs = getsharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
+        val email= prefs.getString("email", null)
+        val provider= prefs.getString("provider", null)
+
+        if(email != null && provider != null){
+            showHome(email, ProviderType.valueOf(provider))
+        }
     }
 
     private fun setup() {

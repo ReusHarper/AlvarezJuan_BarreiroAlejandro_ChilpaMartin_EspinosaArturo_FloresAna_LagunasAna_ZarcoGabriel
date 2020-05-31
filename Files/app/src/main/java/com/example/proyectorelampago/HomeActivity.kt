@@ -26,13 +26,15 @@ class HomeActivity : AppCompatActivity() {
         // Setup
         val bundle = intent.extras
         val email = bundle?.getString("email")
-        setup(email ?: "--")
+        val provider = bundle?.getStrinf("provider")
+        setup(email ?: "--", provider?:)
 
         //Guardar datos
 
-        val prefs = getsharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE.edit)
+        val prefs = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE.edit)
         prefs.putString("email", email)
-        prefs
+        prefs.putString("provider", provider)
+        prefs.apply()
     }
 
     private fun setup(email: String) {
@@ -57,6 +59,12 @@ class HomeActivity : AppCompatActivity() {
         }
 
         logOutbutton.setOnClickListener {
+
+
+            val prefs = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE.edit)
+            prefs.clear()
+            prefs.apply()
+
             FirebaseAuth.getInstance().signOut()
             onBackPressed()
         }
