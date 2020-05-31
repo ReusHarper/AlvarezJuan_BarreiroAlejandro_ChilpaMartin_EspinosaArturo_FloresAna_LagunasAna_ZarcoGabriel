@@ -18,8 +18,8 @@
     <string name="d_logoFacebook">Logo de Facebook</string>
     <string name="d_logoGoogle">Logo de Google</string>
     <string name="d_logoTwitter">Logo de Twitter</string>
-    <string name="calendario_relampago_2_0">Calendario Relampago</string>
-    <string name="m_bienvenida">Bienvenidos a Proyecto Relampago</string>
+    <string name="calendario_relampago_2_0">Calendario mensual</string>
+    <string name="m_bienvenida">Bienvenidos a Proyecto-Relampago</string>
     <string name="facebook_app_id">2705394969728640</string>
     <string name="fb_login_protocol_scheme">fb2705394969728640</string>
 
